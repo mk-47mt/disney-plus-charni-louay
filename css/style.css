@@ -1,0 +1,1212 @@
+/* Réinitialisation des marges et paddings par défaut, et définition de la police globale */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Police sans-serif par défaut */
+    font-style: normal;
+    text-decoration: none;
+    box-sizing: border-box; /* Facilite la gestion des tailles d'éléments */
+    color: rgb(192, 192, 192); /* Couleur de texte par défaut */
+    font-weight: 400;
+    line-height: 25px; /* Hauteur de ligne pour améliorer la lisibilité */
+    size: 18px; 
+  }
+  
+  /* Styles pour les images, les rendant adaptables */
+  img {
+    width: 100%; /* Largeur complète */
+    height: 100%; /* Hauteur complète */
+    position: static; /* Position par défaut */
+  }
+  
+  /* Styles pour le bouton principal */
+  .btn-1 {
+    padding: 8px 20px; /* Espacement interne */
+    background-color: #040714; /* Couleur de fond sombre */
+    border-radius: 5px; /* Coins arrondis */
+    border: 1px solid #f9f9f9; /* Bordure claire */
+    position: absolute; /* Positionnement absolu */
+    margin-top: 10px; /* Marge supérieure */
+    float: right; /* Alignement à droite */
+    margin-left: 92.5%; /* Positionnement horizontal */
+    cursor: pointer; /* Changement de curseur au survol */
+  }
+  
+  /* Effets de survol pour le bouton */
+  .btn-1:hover {
+    background-color: rgb(224, 247, 247); /* Changement de couleur au survol */
+    border-color: rgba(0, 0, 0, 0.8); /* Changement de couleur de bordure */
+    transition: all .2s ease 0s; /* Transition douce */
+    color: #040714; /* Changement de couleur de texte */
+  }
+  
+  /* Flexbox pour la première section */
+  .first {
+    display: flex; /* Utilisation de flexbox */
+  }
+  
+  /* Positionnement de la deuxième partie */
+  .part2 {
+    margin-bottom: 10%; /* Marge inférieure */
+    position: absolute; /* Positionnement absolu */
+  }
+  
+  /* Navigation principale (avant le défilement) */
+  .nav-pre-sticky {
+    width: 1054px; /* Largeur définie */
+    height: 70px; /* Hauteur fixe */
+    float: right; /* Alignement à droite */
+    display: flex; /* Flexbox pour aligner les éléments */
+    pointer-events: auto; /* Activation des événements de pointeur */
+    position: absolute; /* Positionnement absolu */
+  }
+  
+  /* Liste de navigation */
+  .nav-list {
+    justify-content: flex-end; /* Alignement à droite */
+    width: 982px; /* Largeur fixe */
+    height: 60px; /* Hauteur fixe */
+    margin: 5px; /* Marge */
+  }
+  
+  /* Éléments de la liste de navigation */
+  .nav-list-item {
+    list-style: none; /* Suppression des puces */
+    width: auto; /* Largeur automatique */
+    height: 50px; /* Hauteur fixe */
+    margin: 5px; /* Marge */
+    display: inline-flex; /* Alignement en ligne */
+    background: rgba(0, 0, 0, 0.8); /* Couleur de fond semi-transparente */
+    border: 1px solid silver; /* Bordure argentée */
+    text-align: center; /* Centrage du texte */
+    cursor: pointer; /* Curseur de main */
+    align-items: center; /* Alignement vertical */
+    vertical-align: middle; /* Alignement vertical */
+    letter-spacing: 1.76px; /* Espacement entre les lettres */
+    border-radius: 4px; /* Coins arrondis */
+    padding: 0 16px; /* Espacement horizontal */
+  }
+  
+  /* Style pour les éléments de la navigation au survol */
+  .nav-list-item:hover {
+    background-color: rgb(224, 247, 247); /* Changement de couleur au survol */
+    border-color: rgba(0, 0, 0, 0.8); /* Changement de couleur de bordure */
+    transition: all .2s ease 0s; /* Transition douce */
+  }
+  
+  /* Styles pour les éléments de type 'item' */
+  .item {
+    width: auto; /* Largeur automatique */
+    display: inline-flex; /* Alignement en ligne */
+    text-transform: uppercase; /* Texte en majuscules */
+    cursor: pointer; /* Curseur de main */
+  }
+  
+  /* Changement de couleur au survol des items */
+  .item:hover {
+    color: black; /* Changement de couleur au survol */
+  }
+  
+  /* Styles pour les sections de prix */
+  .prix {
+    width: 1839px; /* Largeur fixe */
+    height: 337px; /* Hauteur fixe */
+  }
+  
+  /* Styles de l'élément principal */
+  main {
+    background-color: #050714; /* Couleur de fond sombre */
+  }
+  
+  /* En-tête */
+  header {
+    position: absolute; /* Positionnement absolu */
+    width: 100%; /* Largeur complète */
+  }
+  
+  /* Styles pour les légendes des tableaux */
+  caption {
+    caption-side: bottom; /* Position de la légende en bas */
+    padding: 10px; /* Espacement */
+    text-align: left; /* Alignement à gauche */
+  }
+  
+  /* Logo */
+  .logo {
+    width: 100px; /* Largeur fixe du logo */
+    height: 101px; /* Hauteur fixe du logo */
+  }
+  
+  /* Styles supplémentaires pour les sections de prix */
+  .prix {
+    width: 700px; /* Largeur réduite pour une autre section */
+    height: 128px; /* Hauteur fixe */
+  }
+  
+  /* Styles pour les divs */
+  div {
+    height: auto; /* Hauteur automatique */
+  }
+  
+  /* Styles pour les titres h3 */
+  h3 {
+    color: white; /* Couleur blanche */
+    font-weight: bold; /* Texte en gras */
+    font-size: 28px; /* Taille de police */
+    margin-top: 24px; /* Marge supérieure */
+    margin-bottom: 0; /* Pas de marge inférieure */
+  }
+  
+  /* Styles pour les sous-titres */
+  .subs {
+    font-size: 16px; /* Taille de police pour les sous-titres */
+    margin-top: 24px; /* Marge supérieure */
+  }
+  
+  /* Styles pour les annonces */
+  .ads {
+    font-size: 16px; /* Taille de police pour les annonces */
+    margin-top: 24px; /* Marge supérieure */
+    margin: 20px 0 0; /* Marges */
+  }
+  
+  /* Styles pour les liens */
+  .link {
+    margin-top: 24px; /* Marge supérieure */
+    margin: 20px 0 0; /* Marges */
+    border: none; /* Pas de bordure */
+    color: #f9f9f9; /* Couleur de texte */
+    cursor: pointer; /* Curseur de main */
+    padding: 0; /* Pas de remplissage */
+    text-align: inherit; /* Alignement de texte par défaut */
+    text-decoration: underline; /* Soulignement */
+  }
+  
+  /* Styles pour les petits textes */
+  .xsmall {
+    font-size: 12px; /* Taille de police réduite */
+    margin-top: 24px; /* Marge supérieure */
+    margin: 20px 0 0; /* Marges */
+  }
+  
+  /* Style spécifique pour un élément avec l'ID 'agatha' */
+  #agatha {
+    font-style: italic; /* Italique */
+  }
+  
+  /* Styles pour les listes en grille */
+  .grid-list {
+    gap: 24px; /* Espace entre les éléments */
+    padding-left: 0; /* Pas de remplissage gauche */
+    display: flex; /* Utilisation de flexbox */
+    padding-left: 10%; /* Remplissage gauche */
+    scale: 110%; /* Mise à l'échelle */
+    padding-top: 15px; /* Remplissage supérieur */
+  }
+  
+  /* Styles pour la deuxième liste en grille */
+  .grid-list2 {
+    gap: 24px; /* Espace entre les éléments */
+    display: flex; /* Utilisation de flexbox */
+    scale: 110%; /* Mise à l'échelle */
+    margin-top: 5%; /* Marge supérieure */
+  }
+  
+  /* Styles pour les sections */
+  section {
+    text-align: center; /* Centrage du texte */
+    background-position: 50%; /* Position de fond */
+    background-repeat: no-repeat; /* Pas de répétition de fond */
+    background-size: cover; /* Couverture de fond */
+    box-sizing: border-box; /* Gestion des tailles d'éléments */
+    padding: 5.6vw; /* Remplissage responsive */
+    position: relative; /* Position relative */
+  }
+  
+  /* Styles pour les éléments centrés dans la grille */
+  .grid-center-item {
+    box-sizing: border-box; /* Gestion des tailles d'éléments */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Direction de la colonne */
+    list-style: none; /* Suppression des puces */
+    position: relative; /* Position relative */
+    display: inline-block; /* Alignement en ligne */
+    margin: 0 50px; /* Marges latérales */
+    align-items: center; /* Alignement centré */
+  }
+  
+  /* Styles pour les titres h2 */
+  h2 {
+    color: white; /* Couleur blanche */
+    font-weight: 700; /* Gras */
+    font-size: 40px; /* Taille de police */
+    line-height: 1.4px; /* Hauteur de ligne */
+    margin-bottom: 50px; /* Marge inférieure */
+    margin-top: 150px; /* Marge supérieure */
+  }
+  
+  /* Styles pour la section FAQ */
+  .faq {
+    background-color: #13151d; /* Couleur de fond sombre */
+    box-sizing: border-box; /* Gestion des tailles d'éléments */
+    margin-top: 16px; /* Marge supérieure */
+    text-align: left; /* Alignement à gauche */
+    width: 100%; /* Largeur complète */
+    height: 72px; /* Hauteur fixe */
+  }
+  
+  /* Styles pour les boutons avec un signe plus */
+  .plus::before {
+    content: "+"; /* Affiche un signe plus */
+    color: white; /* Couleur blanche */
+    font-size: 40px; /* Taille de police */
+  }
+  
+  /* Style pour le bouton FAQ */
+  .faq-button {
+    background: 0 0; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur de main */
+    margin: 0; /* Pas de marge */
+    padding: 24px; /* Remplissage */
+    text-align: inherit; /* Alignement de texte par défaut */
+    width: 100%; /* Largeur complète */
+  }
+  
+  /* Styles pour les éléments span */
+  span {
+    color: white; /* Couleur blanche */
+    font-style: bold; /* Texte en gras (non valide, utiliser font-weight à la place) */
+  }
+  
+  /* Logo pour un autre élément */
+  .logo2 {
+    width: 200px; /* Largeur fixe du logo */
+  }
+  
+  /* Styles pour les éléments de la grille */
+  .grid-center-item2 {
+    box-sizing: border-box; /* Gestion des tailles d'éléments */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Direction de la colonne */
+    list-style: none; /* Suppression des puces */
+    position: relative; /* Position relative */
+    align-items: center; /* Alignement centré */
+    margin: 0 50px; /* Marges latérales */
+  }
+  
+  /* Styles pour le pied de page */
+  footer {
+    background: #040714; /* Couleur de fond sombre */
+  }
+  
+  /* Logo pour le pied de page */
+  .logoD {
+    width: 120px; /* Largeur fixe du logo */
+    height: 72px; /* Hauteur fixe du logo */
+  }
+  
+  /* Alignement des contenus */
+  .align-content {
+    align-items: center; /* Alignement vertical centré */
+    display: flex; /* Utilisation de flexbox */
+    text-align: start; /* Alignement de texte au début */
+  }
+  
+  /* Styles pour le contenu supérieur */
+  .align-content2 {
+    padding: 0%; /* Pas de remplissage */
+    margin: 0%; /* Pas de marge */
+  }
+  
+  /* Styles pour la partie supérieure de la page */
+  .top-page {
+    padding: 0%; /* Pas de remplissage */
+    margin: 0%; /* Pas de marge */
+  }
+  
+  /* Styles pour le centre d'intégration */
+  .integrationcenter {
+    position: absolute; /* Positionnement absolu */
+    text-align: center; /* Centrage du texte */
+    z-index: 1; /* Z-index pour la superposition */
+    bottom: 300px; /* Position à 300px du bas */
+    left: 22.75%; /* Positionnement horizontal */
+  }
+  
+  /* Alignement à gauche pour un élément d'intégration */
+  .integrationleft {
+    position: absolute; /* Positionnement absolu */
+    text-align: left; /* Alignement à gauche */
+    z-index: 1; /* Z-index pour la superposition */
+    margin-left: 0%; /* Pas de marge gauche */
+    bottom: 750px; /* Position à 750px du bas */
+  }
+  
+  /* Styles pour le formulaire */
+  form {
+    margin-top: 20px; /* Marge supérieure */
+    display: flex; /* Utilisation de flexbox */
+    max-width: 640px; /* Largeur maximale */
+    margin-left: auto; /* Centrage horizontal */
+    margin-right: auto; /* Centrage horizontal */
+  }
+  
+  /* Styles pour les champs du formulaire */
+  .field {
+    flex-grow: 1; /* Croissance flexible */
+    width: auto; /* Largeur automatique */
+  }
+  
+  /* Styles pour le champ email */
+  #email {
+    border-radius: 4px 0 0 4px; /* Coins arrondis */
+    box-sizing: border-box; /* Gestion des tailles d'éléments */
+    width: 100%; /* Largeur complète */
+    height: 50px; /* Hauteur fixe */
+    padding: 0 12px; /* Remplissage horizontal */
+    background-color: #31343e; /* Couleur de fond sombre */
+    border: 1px solid #31343e; /* Bordure sombre */
+    border-radius: 4px; /* Coins arrondis */
+    color: silver; /* Couleur de texte */
+    display: block; /* Affichage en bloc */
+    font-size: inherit; /* Taille de police héritée */
+  }
+  
+  /* Styles pour les boutons du formulaire */
+  .form-buttons {
+    align-items: center; /* Alignement vertical centré */
+    border-radius: 4px; /* Coins arrondis */
+    box-sizing: border-box; /* Gestion des tailles d'éléments */
+    cursor: pointer; /* Curseur de main */
+    display: inline-flex; /* Alignement en ligne */
+    justify-content: center; /* Centrage horizontal */
+    text-align: center; /* Centrage du texte */
+    transition: all .2s ease 0s; /* Transition douce */
+    vertical-align: middle; /* Alignement vertical */
+    font-weight: 400; /* Poids normal */
+    letter-spacing: 1.76px; /* Espacement entre les lettres */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  
+  /* Styles pour le bouton d'enregistrement */
+  .register {
+    background: #02d6e8; /* Couleur de fond claire */
+    color: #02172a; /* Couleur de texte sombre */
+    height: 50px; /* Hauteur fixe */
+    max-width: 260px; /* Largeur maximale */
+    padding: 8px 14px; /* Remplissage interne */
+    border-radius: 0 4px 4px 0; /* Coins arrondis */
+    margin: 0; /* Pas de marge */
+    width: 100%; /* Largeur complète */
+    border: none; /* Pas de bordure */
+    font-family: inherit; /* Héritage de la police */
+    cursor: pointer; /* Curseur de main */
+    text-align: center; /* Centrage du texte */
+  }
+  
+  /* Effet de survol pour le bouton d'enregistrement */
+  .register:hover {
+    background: #02B6C5; /* Changement de couleur au survol */
+  }
+  
+  /* Styles pour les éléments span dans le formulaire */
+  .formspan {
+    text-transform: uppercase; /* Texte en majuscules */
+    color: #02172a; /* Couleur de texte sombre */
+  }
+  
+  /* Styles pour le menu déroulant */
+  .dropdown {
+    max-width: 100%; /* Largeur maximale */
+    height: 63px; /* Hauteur fixe */
+    margin: 20px auto; /* Marge verticale */
+    transition: height 0.4s ease-in-out; /* Transition pour l'animation */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Forme personnalisée */
+    background-color: #13151d; /* Couleur de fond sombre */
+    text-align: left; /* Alignement à gauche */
+  }
+  
+  /* Styles pour la partie supérieure du menu déroulant */
+  .bloc-top {
+    margin: 0; /* Pas de marge */
+    padding: 20px; /* Remplissage */
+    display: block; /* Affichage en bloc */
+    width: 100%; /* Largeur complète */
+    border: none; /* Pas de bordure */
+    outline: none; /* Pas de contour */
+    font-size: 20px; /* Taille de police */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Alignement centré */
+    background: #13151D; /* Couleur de fond sombre */
+    color: #f1f1f1; /* Couleur de texte claire */
+    cursor: pointer; /* Curseur de main */
+    border-radius: 5px; /* Coins arrondis */
+    text-align: inherit; /* Alignement de texte par défaut */
+  }
+  
+  /* Styles pour les images dans le bloc supérieur */
+  .bloc-top img {
+    width: 20px; /* Largeur fixe */
+  }
+  
+  /* Styles pour les liens dans le menu déroulant */
+  .bloc-links {
+    padding: 0 22px; /* Remplissage latéral */
+  }
+  
+  /* Styles pour les éléments de la liste dans le menu déroulant */
+  .bloc-links li {
+    list-style-type: none; /* Suppression des puces */
+  }
+  
+  /* Styles pour les textes dans les éléments de la liste */
+  .bloc-links li span {
+    font-size: 18px; /* Taille de police */
+    color: #f1f1f1; /* Couleur de texte claire */
+    margin-left: 5px; /* Marge gauche */
+  }
+  
+  /* Styles pour le dernier élément de la liste */
+  .bloc-links li:last-child {
+    padding-bottom: 2px; /* Marge inférieure */
+  }
+  
+  /* Styles pour le contenu du menu déroulant */
+  .dropdown-content {
+    display: none; /* Masqué par défaut */
+    position: absolute; /* Positionnement absolu */
+    left: 50%; /* Positionnement horizontal */
+    transform: translateX(-50%); /* Centrage horizontal */
+    background-color: #13151d; /* Couleur de fond sombre */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre */
+    z-index: 1; /* Z-index pour la superposition */
+  }
+  
+  /* Affichage du contenu lors du survol */
+  .bloc-top:hover + .dropdown-content {
+    display: block; /* Affichage au survol */
+  }
+  
+  /* Styles pour les éléments enfants dans le menu déroulant */
+  .dropdown-content li {
+    padding: 8px 16px; /* Espacement interne */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Bordure inférieure */
+  }
+  
+  /* Couleur de fond au survol des éléments du menu déroulant */
+  .dropdown-content li:hover {
+    background-color: #2e2e2e; /* Changement de couleur au survol */
+  }
+  
+  /* Styles pour les boutons de fermeture */
+  .close-button {
+    position: absolute; /* Positionnement absolu */
+    top: 10px; /* Position verticale */
+    right: 10px; /* Position horizontale */
+    cursor: pointer; /* Curseur de main */
+    font-size: 24px; /* Taille de police */
+    color: white; /* Couleur blanche */
+  }
+  
+  /* Styles pour les modales */
+  .modal {
+    display: none; /* Masqué par défaut */
+    position: fixed; /* Positionnement fixe */
+    z-index: 999; /* Z-index pour la superposition */
+    left: 0; /* Position horizontale */
+    top: 0; /* Position verticale */
+    width: 100%; /* Largeur complète */
+    height: 100%; /* Hauteur complète */
+    overflow: auto; /* Défilement si nécessaire */
+    background-color: rgb(0,0,0); /* Fond noir transparent */
+  }
+  
+  /* Styles pour le contenu de la modale */
+  .modal-content {
+    background-color: #fefefe; /* Couleur de fond clair */
+    margin: 15% auto; /* Marge verticale */
+    padding: 20px; /* Remplissage */
+    border: 1px solid #888; /* Bordure */
+    width: 80%; /* Largeur */
+  }
+  
+  /* Styles pour le fond de la modale */
+  .modal-background {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre semi-transparent */
+    position: fixed; /* Positionnement fixe */
+    top: 0; /* Position verticale */
+    left: 0; /* Position horizontale */
+    width: 100%; /* Largeur complète */
+    height: 100%; /* Hauteur complète */
+    z-index: 998; /* Z-index pour la superposition */
+  }
+  
+  /* Styles pour les éléments du formulaire dans la modale */
+  .modal form {
+    margin: 0; /* Pas de marge */
+  }
+  
+  /* Styles pour les boutons de la modale */
+  .modal .modal-button {
+    background-color: #040714; /* Couleur de fond sombre */
+    color: white; /* Couleur de texte blanche */
+    padding: 10px 20px; /* Remplissage */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de main */
+  }
+  
+  /* Effet de survol pour les boutons de la modale */
+  .modal .modal-button:hover {
+    background-color: #02d6e8; /* Changement de couleur au survol */
+  }
+  
+  /* Styles pour le bouton de fermeture dans la modale */
+  .modal .close-button {
+    color: #aaa; /* Couleur gris clair */
+    float: right; /* Alignement à droite */
+    font-size: 28px; /* Taille de police */
+    font-weight: bold; /* Texte en gras */
+    line-height: 28px; /* Hauteur de ligne */
+    cursor: pointer; /* Curseur de main */
+  }
+  
+  /* Changement de couleur au survol du bouton de fermeture */
+  .modal .close-button:hover,
+  .modal .close-button:focus {
+    color: black; /* Changement de couleur au survol */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(192, 192, 192);
+    font-weight: 400;
+    line-height: 25px;
+    size: 18px;
+  
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    position: static;
+  
+  }
+  
+  
+  .btn-1 {
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #040714;
+    border-radius: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: #f9f9f9;
+    position: absolute;
+    margin-top: 10px;
+    float: right;
+    margin-left: 92.5%;
+    cursor: pointer;
+  }
+  
+  .btn-1:hover {
+    background-color: rgb(224, 247, 247);
+    border-color: rgba(0, 0, 0, 0.8);
+    transition: all .2s ease 0s;
+    color: #040714;
+  }
+  
+  
+  .first {
+    display: flex;
+  }
+  
+  .part2 {
+    margin-bottom: 10%;
+    position: absolute;
+  }
+  
+  
+  
+  .nav-pre-sticky {
+    width: 1054px;
+    height: 70px;
+    float: right;
+    display: flex;
+    pointer-events: auto;
+    position: absolute;
+  
+  }
+  
+  .nav-list {
+    justify-content: flex-end;
+    width: 982px;
+    height: 60px;
+    margin: 5px;
+  }
+  
+  
+  
+  .nav-list-item {
+    list-style: none;
+    width: auto;
+    height: 50px;
+    margin: 5px;
+    display: inline-flex;
+    background: rgba(0, 0, 0, 0.8);
+    background-size: 50px;
+    border: 1px;
+    border-color: silver;
+    border-style: solid;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    vertical-align: middle;
+    letter-spacing: 1.76px;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: right;
+  
+  }
+  
+  .nav ul li {
+    display: inline-block;
+  }
+  
+  .nav-list-item:hover {
+    background-color: rgb(224, 247, 247);
+    border-color: rgba(0, 0, 0, 0.8);
+    transition: all .2s ease 0s;
+  
+  }
+  
+  .item {
+    width: auto;
+    display: inline-flex;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  
+  .item:hover {
+    color: black;
+  }
+  
+  
+  
+  .prix {
+    width: 1839px;
+    height: 337px;
+  }
+  
+  main {
+    background-color: #050714;
+  
+  }
+  
+  header {
+    position: absolute;
+    width: 100%;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 101px;
+  
+  }
+  
+  .prix {
+    width: 700px;
+    height: 128px;
+  }
+  
+  
+  div {
+    height: auto;
+  }
+  
+  
+  
+  h3 {
+    color: white;
+    font-style: bold;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+  
+  .subs {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  
+  .ads {
+    font-size: 16px;
+    margin-top: 24px;
+    margin: 20px 0 0;
+  }
+  
+  .link {
+    margin-top: 24px;
+    margin: 20px 0 0;
+    border: none;
+    color: #f9f9f9;
+    cursor: pointer;
+    padding: 0;
+    text-align: inherit;
+    text-decoration: underline;
+  }
+  
+  .xsmall {
+    font-size: 12px;
+    margin-top: 24px;
+    margin: 20px 0 0;
+  }
+  
+  #agatha {
+    font-style: italic;
+  }
+  
+  .grid-list {
+    gap: 24px;
+    padding-left: 0;
+    display: flex;
+    padding-left: 10%;
+    scale: 110%;
+    padding-top: 15px;
+  }
+  
+  .grid-list2 {
+    gap: 24px;
+  
+    display: flex;
+  
+    scale: 110%;
+    margin-top: 5%;
+  }
+  
+  section {
+    text-align: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 5.6vw;
+    position: relative;
+  }
+  
+  .grid-center-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 0 50px;
+    align-items: center;
+  
+  }
+  
+  h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1, 4px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+  }
+  
+  .faq {
+    background-color: #13151d;
+    box-sizing: border-box;
+    margin-top: 16px;
+    text-align: left;
+    width: 100%;
+    height: 72px;
+  
+  }
+  
+  .plus::before {
+    content: "+";
+    color: white;
+    font-size: 40px;
+  }
+  
+  .plus::after {
+    content: "";
+  }
+  
+  
+  .faq-button {
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 24px;
+    text-align: inherit;
+    width: 100%;
+  }
+  
+  
+  span {
+    color: white;
+    font-style: bold;
+  
+  }
+  
+  .logo2 {
+    width: 200px;
+  }
+  
+  .grid-center-item2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    margin: 0 50px;
+  }
+  
+  footer {
+    background: #040714;
+  }
+  
+  .logoD {
+    width: 120px;
+    height: 72px;
+  }
+  
+  
+  
+  .align-content {
+    align-items: center;
+    display: flex;
+    text-align: start;
+  }
+  
+  .align-content2 {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .top-page {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .integrationcenter {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    bottom: 300px;
+    left: 22.75%;
+  }
+  
+  
+  .integrationleft {
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+    margin-left: 0%;
+    bottom: 750px;
+  }
+  
+  form {
+    margin-top: 20px;
+    display: flex;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .field {
+    flex-grow: 1;
+    width: auto;
+  }
+  
+  
+  
+  #email {
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+    background-color: #31343e;
+    border: 1px solid #31343e;
+    border-radius: 4px;
+    color: silver;
+    display: block;
+    font-size: inherit;
+  
+  }
+  
+  .form-buttons {
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    transition: all .2s ease 0s;
+    vertical-align: middle;
+    font-weight: 400;
+    letter-spacing: 1.76px;
+    text-decoration: none;
+  }
+  
+  .register {
+    background: #02d6e8;
+    color: #02172a;
+    height: 50px;
+    max-width: 260px;
+    padding: 8px 14px;
+    border-radius: 0 4px 4px 0;
+    margin: 0;
+    padding-left: 44px;
+    padding-right: 44px;
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .register:hover {
+    background: #02B6C5;
+  
+  }
+  
+  
+  
+  .formspan {
+    text-transform: uppercase;
+    color: #02172a;
+  }
+  
+  .dropdown {
+  
+  
+    max-width: 100%;
+  
+  
+    height: 63px;
+  
+  
+    margin: 20px auto;
+  
+  
+    transition: height 0.4s ease-in-out;
+  
+  
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  
+  
+    background-color: #13151d;
+  
+  
+    text-align: left;
+  
+  
+  }
+  
+  
+  
+  .bloc-top {
+  
+  
+    margin: 0;
+  
+  
+    padding: 20px;
+  
+  
+    display: block;
+  
+  
+    width: 100%;
+  
+  
+    border: none;
+  
+  
+    outline: none;
+  
+  
+    font-size: 20px;
+  
+  
+    display: flex;
+  
+  
+    justify-content: space-between;
+  
+  
+    align-items: center;
+  
+  
+    background: #13151D;
+  
+  
+    color: #f1f1f1;
+  
+  
+    cursor: pointer;
+  
+  
+    border-radius: 5px;
+  
+  
+    text-align: inherit;
+  
+  
+  }
+  
+  
+  
+  .bloc-top img {
+  
+  
+    width: 20px;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  .bloc-links {
+  
+  
+    padding: 0 22px;
+  
+  
+  }
+  
+  
+  
+  .bloc-links li {
+  
+  
+    list-style-type: none;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  .bloc-links li span {
+  
+  
+    font-size: 18px;
+  
+  
+    color: #f1f1f1;
+  
+  
+    margin-left: 5px;
+  
+  
+  }
+  
+  
+  
+  .bloc-links li:last-child {
+  
+  
+    padding-bottom: 2px;
+  
+  
+  }
+  
+  select {
+    background-color: transparent;
+    border: 0;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    display: grid;
+    justify-content: center;
+    max-width: 1217px;
+  }
+  
+  td {
+  
+    padding: 30px 90px;
+    text-align: center;
+    border-bottom: 1px solid;
+    border-color: #31343E;
+  }
+  
+  .td1 {
+    text-align: left;
+    padding-left: 0;
+  }
+  
+  .td2 {
+    color: #31343E;
+  }
+  
+  i {
+    font-size: 25px;
+  }
+  
+  .td4 {
+    background-color: #13151D;
+  }
+  
+  .tbl-txt p {
+    color: aliceblue;
+    text-align: left;
+    width: 80%;
+    padding-left: 10%;
+    font-size: 11.4px;
+  }
+  
+  .tbl-txt a {
+    color: aliceblue;
+  }
+  
+  .ttle-tab {
+    color: #fff;
+  }
+  
+  .tbl-txt {
+    text-align: left;
+  
+  }
+  
+  .zone-tableau{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1217px;
+  }
+  
+  
